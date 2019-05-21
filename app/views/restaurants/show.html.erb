@@ -1,0 +1,10 @@
+<h1><%= @restaurant.name %></h1>
+<p><%= @restaurant.address %></p>
+<p><%= "*" * @restaurant.stars %></p>
+
+<%= link_to restaurant_path(@restaurant), method: :delete do %>
+  <i class="fas fa-trash-alt"></i>
+<% end %>
+<br>
+<%= link_to "Home", restaurants_path %>
+

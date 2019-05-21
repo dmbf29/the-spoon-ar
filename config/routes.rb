@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   patch 'restaurants/:id', to: 'restaurants#update'
 
   # delete
-  delete 'restaurants/:hey_guys_delete', to: 'restaurants#destroy'
+  delete 'restaurants/:id', to: 'restaurants#destroy'
 
 end
 
